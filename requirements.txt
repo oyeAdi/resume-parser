@@ -1,6 +1,6 @@
-Flask 
-python-docx 
-PyMuPDF 
-google-generativeai
-gunicron
+Flask
 flask-cors
+python-docx
+PyMuPDF
+google-generativeai
+gunicorn
