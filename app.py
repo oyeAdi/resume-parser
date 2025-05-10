@@ -15,8 +15,7 @@ model = genai.GenerativeModel("gemini-2.0-flash")
 
 # Sample job description
 JOB_DESCRIPTION = """
-We are looking for a backend Java developer with at least 3 years of experience in Spring Boot microservices,
-RESTful APIs, PostgreSQL, and Kafka. Experience with CI/CD pipelines and knowledge of Docker is a plus.
+I want an AI engineer out of college. Flask,react.js is must.
 """
 
 # Utility to extract text
