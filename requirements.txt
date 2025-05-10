@@ -2,3 +2,4 @@ Flask
 python-docx 
 PyMuPDF 
 google-generativeai
+gunicorn
