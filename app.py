@@ -1,11 +1,12 @@
+from flask import Flask, request, jsonify
+from flask_cors import CORS  # Import CORS
 import os
 import fitz  # PyMuPDF
 import docx
-from flask import Flask, request, jsonify
 import google.generativeai as genai
 
-# Initialize Flask app
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
 # Load Gemini model
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
@@ -55,7 +56,6 @@ Job Description:
 Resume:
 {resume_text}
 """
-
         response = model.generate_content(prompt)
         result = response.text.strip()
         return jsonify({"result": result})
