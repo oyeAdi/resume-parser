@@ -2,4 +2,5 @@ Flask
 python-docx 
 PyMuPDF 
 google-generativeai
-gunicorn
+gunicron
+flask-cors
