@@ -44,6 +44,7 @@ def upload_file():
 
     try:
         resume_text = extract_text(file)
+        print(resume_text)
 
         prompt = f"""Compare the following resume with the job description below. 
 If the resume aligns well with the requirements, respond ONLY with: "Shortlisted". 
@@ -57,6 +58,7 @@ Resume:
 """
         response = model.generate_content(prompt)
         result = response.text.strip()
+        print(result)
         return jsonify({"result": result})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
