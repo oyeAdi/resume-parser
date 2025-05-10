@@ -11,7 +11,7 @@ CORS(app)  # Enable CORS for all routes
 # Load Gemini model
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=GOOGLE_API_KEY)
-model = genai.GenerativeModel("gemini-pro")
+model = genai.GenerativeModel("gemini-2.0-flash")
 
 # Sample job description
 JOB_DESCRIPTION = """
